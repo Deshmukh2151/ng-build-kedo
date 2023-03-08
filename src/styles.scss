@@ -1,1 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Varibles
+$text-white:#ffffff;
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins, Helvetica, "sans-serif";
+}
+.login-wrapper{
+    background-image: url("./assets/images/bg-2.jpg");  
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #3F4254;
+    height: 100vh;
+    .login{
+        width: 100%;
+        max-width: 450px;
+        .column-padding{
+            padding-top: 12%;
+        }
+        .heading{
+            margin-bottom: 50px;
+            &__title{
+                opacity: 0.4;
+                font-weight: 400;
+                line-height: 1.2;
+                font-size: 19px;
+                color: $text-white;
+            }
+            &__para{
+                opacity: 0.4;
+                font-weight: 400;
+                line-height: 1;
+                font-size: 14px;
+                color: $text-white;
+            }
+        }
+        .login-form{
+            input[type="email"], input[type="password"] {
+                background-color: rgba(255, 255, 255, 0.02);
+                color: $text-white;
+                border-radius: 50rem !important;
+                padding: 10px 20px;
+                border: none;
+                outline: none;
+                &:focus{
+                    box-shadow: none;
+                    border: none;
+                    outline: none;
+                }
+            }
+            .forget-password{
+                opacity: 0.4;
+                font-weight: 400;
+                line-height: 1;
+                font-size: 14px;
+                color: $text-white;   
+            } 
+            .signIn-btn{
+                .btn-signIn{
+                    color: #FFFFFF;
+                    background-color: #13c3b9;
+                    border-color: #13c3b9;
+                    opacity: 0.9;
+                    padding-left: 35px;
+                    padding-right: 35px;
+                    border-radius: 50rem;
+                }
+            } 
+        }
+    } 
+}  
+

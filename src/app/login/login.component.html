@@ -1,0 +1,29 @@
+<div class="d-flex justify-content-center align-items-center login-wrapper">
+    <div class="login">
+        <div class="column-padding">
+            <div class="d-flex flex-column justify-content-center align-items-center p-3">
+                <a href="javascript:void(0)" class="mb-5 w-100 text-center">
+                    <img src="../../assets/images/logo-3pl.png" alt="Logo images" class="img-fluid">
+                </a>
+                <div class="heading text-center">
+                    <h3 class="heading__title">Sign In To Admin</h3>
+                    <p class="heading__para pt-0">Enter your details to login to your account:</p>
+                </div>
+                <form class="w-100 login-form" [formGroup]="LoginForm">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" formControlName="email">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Password" formControlName="password">
+                    </div>
+                    <div class="forget-password d-flex justify-content-end mb-5">
+                        <a href="javascript:void(0)" class="text-white font-weight-bold pe-3">Forget Password ?</a>
+                    </div>
+                    <div class="signIn-btn text-center">
+                        <button type="submit" [disabled]="LoginForm.invalid" class="btn btn-signIn" (click)="loginForm()">Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>    
+</div>
